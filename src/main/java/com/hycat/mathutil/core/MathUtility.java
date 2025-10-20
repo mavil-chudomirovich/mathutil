@@ -14,17 +14,25 @@ public class MathUtility {
     //0...20 -> boundary value - biên giới của tập giá trị
     //          xích qua 1 xíu là sang vùng invalid boundary!!!
     //0, xích nhẹ sang trái 1 đơn vị, k ổn, k tính đc, -1 sao tính!!!
+//    public static long getFactorial(int n){
+//        if(n < 0 || n > 20){
+//            //ném ngoại lệ, kèm câu "chửi", và dừng hàm ngay, ko có value nào đc trả về!!!
+//            throw new IllegalArgumentException("n must be between 0 and 20");
+//        }
+//
+//        //bến trung gian để tính phép nhân
+//        long result = 1;
+//        for (int i = 1; i <= n; i++){
+//            result *= i; // reuslt = result * i; thuật toán con heo đất, ốc bươu nhồi thịt, vào đây tiếp chiêu
+//        }
+//        return result;
+//    }
     public static long getFactorial(int n){
         if(n < 0 || n > 20){
-            //ném ngoại lệ, kèm câu "chửi", và dừng hàm ngay, ko có value nào đc trả về!!!
             throw new IllegalArgumentException("n must be between 0 and 20");
         }
-
-        //bến trung gian để tính phép nhân
-        long result = 1;
-        for (int i = 1; i <= n; i++){
-            result *= i; // reuslt = result * i; thuật toán con heo đất, ốc bươu nhồi thịt, vào đây tiếp chiêu
-        }
-        return result;
+        if(n == 1 || n == 0) return 1;
+        return n * getFactorial(n - 1);
     }
+    //kiểm thử lại code đã tối ưu là regression testing 
 }
