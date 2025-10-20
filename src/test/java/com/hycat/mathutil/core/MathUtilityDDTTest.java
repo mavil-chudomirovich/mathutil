@@ -17,7 +17,7 @@ class MathUtilityDDTTest {
                             {4, 24},
                             {3, 6},
                             {2, 2},
-                            {0, 1}}; // [7][2]
+                            {0, 10}}; // [7][2]
         return dataset;
     }
     @ParameterizedTest
