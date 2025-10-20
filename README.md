@@ -1,1 +1,1 @@
-"# mathutil" 
+[![Math Utility Project (CI included) | © 2025 by mavil.dev](https://github.com/mavil-chudomirovich/mathutil/actions/workflows/maven.yml/badge.svg)](https://github.com/mavil-chudomirovich/mathutil/actions/workflows/maven.yml)
